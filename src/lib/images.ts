@@ -183,8 +183,8 @@ export class PassImages extends Map<string, string | Buffer> {
   ): void {
     const densityMulti = density ? parseInt(density.charAt(0), 10) : 1;
     const { format, width, height } = sizeResult;
-    if (format !== 'png')
-      throw new TypeError(`Image for "${imageType}" is not a PNG file!`);
+    //if (format !== 'png')
+      //throw new TypeError(`Image for "${imageType}" is not a PNG file!`);
     if (!Number.isInteger(width) || width <= 0)
       throw new TypeError(`Image ${imageType} has invalid width: ${width}`);
     if (!Number.isInteger(height) || height <= 0)
